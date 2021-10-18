@@ -82,7 +82,7 @@ def train_nb(x_train, y_train, smoothing=1.0): # Default smoothing value: 1
         grid=GridSearchCV(estimator=clfmodel_list[i], param_grid=parameters_list[i])
         grid.fit(x_train, y_train) # train it!
             #storing result
-        results.append\
+        results_grid.append\
         (
             {
                 'grid': grid,
