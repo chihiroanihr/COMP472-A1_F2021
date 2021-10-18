@@ -45,10 +45,10 @@ def plot_distribution(dataset_target, min_ticks, max_ticks):
     # Annotating the bar plot with the values (total label count)
     for i in range(len(labels)):
         plt.annotate(classes[i], (-0.06 + i, classes[i] + 2))
-    # Show graph
-    plt.show()
     # Save graph
     plt.savefig('BBC-distribution.pdf')
+    # Show graph
+    plt.show()
 
 
 # Vectorize dataset (convert text documents into numerical features)

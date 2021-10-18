@@ -2,63 +2,63 @@
 
 Result Prediction (Actual value & Predicted value)
 (b) Confusion matrix: 
-[[ 97   0   3   0   1]
- [  1  83   1   0   1]
- [  1   0  83   0   0]
- [  0   0   0 103   0]
+[[ 84   0   2   0   4]
+ [  0  78   0   0   1]
+ [  2   0  92   0   1]
+ [  0   0   0 110   0]
  [  0   0   0   0  71]]
 (c) Classification report (Precision, Recall, F1): 
               precision    recall  f1-score   support
 
-           0       0.98      0.96      0.97       101
-           1       1.00      0.97      0.98        86
-           2       0.95      0.99      0.97        84
-           3       1.00      1.00      1.00       103
-           4       0.97      1.00      0.99        71
+           0       0.98      0.93      0.95        90
+           1       1.00      0.99      0.99        79
+           2       0.98      0.97      0.97        95
+           3       1.00      1.00      1.00       110
+           4       0.92      1.00      0.96        71
 
     accuracy                           0.98       445
    macro avg       0.98      0.98      0.98       445
 weighted avg       0.98      0.98      0.98       445
 
-(d) Accuracy score: 0.982 (98.2%)
+(d) Accuracy score: 0.9775 (97.75%)
 
-    F1-score with macro average: 0.9818 (98.18%)
-    F1-score with weighted average: 0.982 (98.2%)
+    F1-score with macro average: 0.9762 (97.62%)
+    F1-score with weighted average: 0.9776 (97.76%)
 (e) The Prior Probability of each class IN TRAIN SET
-    for business (0): 0.1685
-    for entertainment (1): 0.1685
-    for politics (2): 0.1871
-    for sport (3): 0.2292
+    for business (0): 0.1725
+    for entertainment (1): 0.1725
+    for politics (2): 0.1809
+    for sport (3): 0.2253
     for tech (4): 0.1854
 (f) The size of the vocabulary IN TRAIN SET (i.e. the number of different words): 29421
 (g) The number of word-tokens in each class IN TRAIN SET (i.e.  the number of words in total)
-    for business (0): 132671
-    for entertainment (1): 98462
-    for politics (2): 148450
-    for sport (3): 129078
-    for tech (4): 161379
+    for business (0): 136165
+    for entertainment (1): 100903
+    for politics (2): 143170
+    for sport (3): 128579
+    for tech (4): 163830
 (h) The number of word-tokens in the entire corpus (TRAIN SET + TEST SET): 836357
 (i) The number and percentage of 'words with a frequency of zero' in each class IN TRAIN SET
-    for business (0): number = 18708, percentage = 14.1%
-    for entertainment (1): number = 19122, percentage = 19.42%
-    for politics (2): number = 19131, percentage = 12.89%
-    for sport (3): number = 19816, percentage = 15.35%
-    for tech (4): number = 18142, percentage = 11.24%
+    for business (0): number = 18553, percentage = 13.63%
+    for entertainment (1): number = 18896, percentage = 18.73%
+    for politics (2): number = 19373, percentage = 13.53%
+    for sport (3): number = 19930, percentage = 15.5%
+    for tech (4): number = 18234, percentage = 11.13%
 (j) The number and percentage of 'words with a frequency of one' in the entire corpus (TRAIN SET + TEST SET):
     number = 319824, percentage = 38.24%
 (k) Your 2 favorite words (that are present in the vocabulary) and their log-prob IN TRAIN SET
  1. Log probability of word1 ("japan") with smoothing value = 1: 
-    log(P("japan"|business)) = 0.0005490708980085383
-    log(P("japan"|entertainment)) = 0.00020331083881360305
-    log(P("japan"|politics)) = 2.8110259682578948e-05
-    log(P("japan"|sport)) = 8.201944491763355e-05
-    log(P("japan"|tech)) = 0.0002620545073375262
+    log(P("japan"|business)) = 0.00036234947398934694
+    log(P("japan"|entertainment)) = 0.0001304441238758786
+    log(P("japan"|politics)) = 3.476426928402988e-05
+    log(P("japan"|sport)) = 9.493670886075949e-05
+    log(P("japan"|tech)) = 0.0002897785781186126
  2. Log probability of word2 ("korea") with smoothing value = 1: 
-    log(P("korea"|business)) = 0.00021592675764380722
-    log(P("korea"|entertainment)) = 3.9098238233385206e-05
-    log(P("korea"|politics)) = 1.686615580954737e-05
-    log(P("korea"|sport)) = 2.5236752282348784e-05
-    log(P("korea"|tech)) = 7.861635220125786e-05
+    log(P("korea"|business)) = 0.00021137052649378572
+    log(P("korea"|entertainment)) = 3.836591878702311e-05
+    log(P("korea"|politics)) = 2.3176179522686582e-05
+    log(P("korea"|sport)) = 2.5316455696202533e-05
+    log(P("korea"|tech)) = 6.727002706324934e-05
 
 
 
@@ -66,63 +66,63 @@ weighted avg       0.98      0.98      0.98       445
 
 Result Prediction (Actual value & Predicted value)
 (b) Confusion matrix: 
-[[ 97   0   3   0   1]
- [  1  83   1   0   1]
- [  1   0  83   0   0]
- [  0   0   0 103   0]
+[[ 84   0   2   0   4]
+ [  0  78   0   0   1]
+ [  2   0  92   0   1]
+ [  0   0   0 110   0]
  [  0   0   0   0  71]]
 (c) Classification report (Precision, Recall, F1): 
               precision    recall  f1-score   support
 
-           0       0.98      0.96      0.97       101
-           1       1.00      0.97      0.98        86
-           2       0.95      0.99      0.97        84
-           3       1.00      1.00      1.00       103
-           4       0.97      1.00      0.99        71
+           0       0.98      0.93      0.95        90
+           1       1.00      0.99      0.99        79
+           2       0.98      0.97      0.97        95
+           3       1.00      1.00      1.00       110
+           4       0.92      1.00      0.96        71
 
     accuracy                           0.98       445
    macro avg       0.98      0.98      0.98       445
 weighted avg       0.98      0.98      0.98       445
 
-(d) Accuracy score: 0.982 (98.2%)
+(d) Accuracy score: 0.9775 (97.75%)
 
-    F1-score with macro average: 0.9818 (98.18%)
-    F1-score with weighted average: 0.982 (98.2%)
+    F1-score with macro average: 0.9762 (97.62%)
+    F1-score with weighted average: 0.9776 (97.76%)
 (e) The Prior Probability of each class IN TRAIN SET
-    for business (0): 0.1685
-    for entertainment (1): 0.1685
-    for politics (2): 0.1871
-    for sport (3): 0.2292
+    for business (0): 0.1725
+    for entertainment (1): 0.1725
+    for politics (2): 0.1809
+    for sport (3): 0.2253
     for tech (4): 0.1854
 (f) The size of the vocabulary IN TRAIN SET (i.e. the number of different words): 29421
 (g) The number of word-tokens in each class IN TRAIN SET (i.e.  the number of words in total)
-    for business (0): 132671
-    for entertainment (1): 98462
-    for politics (2): 148450
-    for sport (3): 129078
-    for tech (4): 161379
+    for business (0): 136165
+    for entertainment (1): 100903
+    for politics (2): 143170
+    for sport (3): 128579
+    for tech (4): 163830
 (h) The number of word-tokens in the entire corpus (TRAIN SET + TEST SET): 836357
 (i) The number and percentage of 'words with a frequency of zero' in each class IN TRAIN SET
-    for business (0): number = 18708, percentage = 14.1%
-    for entertainment (1): number = 19122, percentage = 19.42%
-    for politics (2): number = 19131, percentage = 12.89%
-    for sport (3): number = 19816, percentage = 15.35%
-    for tech (4): number = 18142, percentage = 11.24%
+    for business (0): number = 18553, percentage = 13.63%
+    for entertainment (1): number = 18896, percentage = 18.73%
+    for politics (2): number = 19373, percentage = 13.53%
+    for sport (3): number = 19930, percentage = 15.5%
+    for tech (4): number = 18234, percentage = 11.13%
 (j) The number and percentage of 'words with a frequency of one' in the entire corpus (TRAIN SET + TEST SET):
     number = 319824, percentage = 38.24%
 (k) Your 2 favorite words (that are present in the vocabulary) and their log-prob IN TRAIN SET
  1. Log probability of word1 ("japan") with smoothing value = 1: 
-    log(P("japan"|business)) = 0.0005490708980085383
-    log(P("japan"|entertainment)) = 0.00020331083881360305
-    log(P("japan"|politics)) = 2.8110259682578948e-05
-    log(P("japan"|sport)) = 8.201944491763355e-05
-    log(P("japan"|tech)) = 0.0002620545073375262
+    log(P("japan"|business)) = 0.00036234947398934694
+    log(P("japan"|entertainment)) = 0.0001304441238758786
+    log(P("japan"|politics)) = 3.476426928402988e-05
+    log(P("japan"|sport)) = 9.493670886075949e-05
+    log(P("japan"|tech)) = 0.0002897785781186126
  2. Log probability of word2 ("korea") with smoothing value = 1: 
-    log(P("korea"|business)) = 0.00021592675764380722
-    log(P("korea"|entertainment)) = 3.9098238233385206e-05
-    log(P("korea"|politics)) = 1.686615580954737e-05
-    log(P("korea"|sport)) = 2.5236752282348784e-05
-    log(P("korea"|tech)) = 7.861635220125786e-05
+    log(P("korea"|business)) = 0.00021137052649378572
+    log(P("korea"|entertainment)) = 3.836591878702311e-05
+    log(P("korea"|politics)) = 2.3176179522686582e-05
+    log(P("korea"|sport)) = 2.5316455696202533e-05
+    log(P("korea"|tech)) = 6.727002706324934e-05
 
 
 
@@ -130,63 +130,63 @@ weighted avg       0.98      0.98      0.98       445
 
 Result Prediction (Actual value & Predicted value)
 (b) Confusion matrix: 
-[[ 94   1   3   0   3]
- [  1  83   1   0   1]
- [  1   0  83   0   0]
- [  0   0   0 103   0]
- [  1   0   0   0  70]]
+[[ 85   0   1   0   4]
+ [  0  77   0   0   2]
+ [  2   0  92   0   1]
+ [  0   0   0 110   0]
+ [  0   0   0   0  71]]
 (c) Classification report (Precision, Recall, F1): 
               precision    recall  f1-score   support
 
-           0       0.97      0.93      0.95       101
-           1       0.99      0.97      0.98        86
-           2       0.95      0.99      0.97        84
-           3       1.00      1.00      1.00       103
-           4       0.95      0.99      0.97        71
+           0       0.98      0.94      0.96        90
+           1       1.00      0.97      0.99        79
+           2       0.99      0.97      0.98        95
+           3       1.00      1.00      1.00       110
+           4       0.91      1.00      0.95        71
 
-    accuracy                           0.97       445
-   macro avg       0.97      0.97      0.97       445
-weighted avg       0.97      0.97      0.97       445
+    accuracy                           0.98       445
+   macro avg       0.98      0.98      0.98       445
+weighted avg       0.98      0.98      0.98       445
 
-(d) Accuracy score: 0.973 (97.3%)
+(d) Accuracy score: 0.9775 (97.75%)
 
-    F1-score with macro average: 0.9724 (97.24%)
-    F1-score with weighted average: 0.973 (97.3%)
+    F1-score with macro average: 0.9759 (97.59%)
+    F1-score with weighted average: 0.9777 (97.77%)
 (e) The Prior Probability of each class IN TRAIN SET
-    for business (0): 0.1685
-    for entertainment (1): 0.1685
-    for politics (2): 0.1871
-    for sport (3): 0.2292
+    for business (0): 0.1725
+    for entertainment (1): 0.1725
+    for politics (2): 0.1809
+    for sport (3): 0.2253
     for tech (4): 0.1854
 (f) The size of the vocabulary IN TRAIN SET (i.e. the number of different words): 29421
 (g) The number of word-tokens in each class IN TRAIN SET (i.e.  the number of words in total)
-    for business (0): 132671
-    for entertainment (1): 98462
-    for politics (2): 148450
-    for sport (3): 129078
-    for tech (4): 161379
+    for business (0): 136165
+    for entertainment (1): 100903
+    for politics (2): 143170
+    for sport (3): 128579
+    for tech (4): 163830
 (h) The number of word-tokens in the entire corpus (TRAIN SET + TEST SET): 836357
 (i) The number and percentage of 'words with a frequency of zero' in each class IN TRAIN SET
-    for business (0): number = 18708, percentage = 14.1%
-    for entertainment (1): number = 19122, percentage = 19.42%
-    for politics (2): number = 19131, percentage = 12.89%
-    for sport (3): number = 19816, percentage = 15.35%
-    for tech (4): number = 18142, percentage = 11.24%
+    for business (0): number = 18553, percentage = 13.63%
+    for entertainment (1): number = 18896, percentage = 18.73%
+    for politics (2): number = 19373, percentage = 13.53%
+    for sport (3): number = 19930, percentage = 15.5%
+    for tech (4): number = 18234, percentage = 11.13%
 (j) The number and percentage of 'words with a frequency of one' in the entire corpus (TRAIN SET + TEST SET):
     number = 319824, percentage = 38.24%
 (k) Your 2 favorite words (that are present in the vocabulary) and their log-prob IN TRAIN SET
  1. Log probability of word1 ("japan") with smoothing value = 1: 
-    log(P("japan"|business)) = 0.0005490708980085383
-    log(P("japan"|entertainment)) = 0.00020331083881360305
-    log(P("japan"|politics)) = 2.8110259682578948e-05
-    log(P("japan"|sport)) = 8.201944491763355e-05
-    log(P("japan"|tech)) = 0.0002620545073375262
+    log(P("japan"|business)) = 0.00036234947398934694
+    log(P("japan"|entertainment)) = 0.0001304441238758786
+    log(P("japan"|politics)) = 3.476426928402988e-05
+    log(P("japan"|sport)) = 9.493670886075949e-05
+    log(P("japan"|tech)) = 0.0002897785781186126
  2. Log probability of word2 ("korea") with smoothing value = 1: 
-    log(P("korea"|business)) = 0.00021592675764380722
-    log(P("korea"|entertainment)) = 3.9098238233385206e-05
-    log(P("korea"|politics)) = 1.686615580954737e-05
-    log(P("korea"|sport)) = 2.5236752282348784e-05
-    log(P("korea"|tech)) = 7.861635220125786e-05
+    log(P("korea"|business)) = 0.00021137052649378572
+    log(P("korea"|entertainment)) = 3.836591878702311e-05
+    log(P("korea"|politics)) = 2.3176179522686582e-05
+    log(P("korea"|sport)) = 2.5316455696202533e-05
+    log(P("korea"|tech)) = 6.727002706324934e-05
 
 
 
@@ -194,63 +194,63 @@ weighted avg       0.97      0.97      0.97       445
 
 Result Prediction (Actual value & Predicted value)
 (b) Confusion matrix: 
-[[ 97   0   3   0   1]
- [  1  83   1   0   1]
- [  1   0  83   0   0]
- [  0   0   0 103   0]
+[[ 84   0   2   0   4]
+ [  0  78   0   0   1]
+ [  2   0  92   0   1]
+ [  0   0   0 110   0]
  [  0   0   0   0  71]]
 (c) Classification report (Precision, Recall, F1): 
               precision    recall  f1-score   support
 
-           0       0.98      0.96      0.97       101
-           1       1.00      0.97      0.98        86
-           2       0.95      0.99      0.97        84
-           3       1.00      1.00      1.00       103
-           4       0.97      1.00      0.99        71
+           0       0.98      0.93      0.95        90
+           1       1.00      0.99      0.99        79
+           2       0.98      0.97      0.97        95
+           3       1.00      1.00      1.00       110
+           4       0.92      1.00      0.96        71
 
     accuracy                           0.98       445
    macro avg       0.98      0.98      0.98       445
 weighted avg       0.98      0.98      0.98       445
 
-(d) Accuracy score: 0.982 (98.2%)
+(d) Accuracy score: 0.9775 (97.75%)
 
-    F1-score with macro average: 0.9818 (98.18%)
-    F1-score with weighted average: 0.982 (98.2%)
+    F1-score with macro average: 0.9762 (97.62%)
+    F1-score with weighted average: 0.9776 (97.76%)
 (e) The Prior Probability of each class IN TRAIN SET
-    for business (0): 0.1685
-    for entertainment (1): 0.1685
-    for politics (2): 0.1871
-    for sport (3): 0.2292
+    for business (0): 0.1725
+    for entertainment (1): 0.1725
+    for politics (2): 0.1809
+    for sport (3): 0.2253
     for tech (4): 0.1854
 (f) The size of the vocabulary IN TRAIN SET (i.e. the number of different words): 29421
 (g) The number of word-tokens in each class IN TRAIN SET (i.e.  the number of words in total)
-    for business (0): 132671
-    for entertainment (1): 98462
-    for politics (2): 148450
-    for sport (3): 129078
-    for tech (4): 161379
+    for business (0): 136165
+    for entertainment (1): 100903
+    for politics (2): 143170
+    for sport (3): 128579
+    for tech (4): 163830
 (h) The number of word-tokens in the entire corpus (TRAIN SET + TEST SET): 836357
 (i) The number and percentage of 'words with a frequency of zero' in each class IN TRAIN SET
-    for business (0): number = 18708, percentage = 14.1%
-    for entertainment (1): number = 19122, percentage = 19.42%
-    for politics (2): number = 19131, percentage = 12.89%
-    for sport (3): number = 19816, percentage = 15.35%
-    for tech (4): number = 18142, percentage = 11.24%
+    for business (0): number = 18553, percentage = 13.63%
+    for entertainment (1): number = 18896, percentage = 18.73%
+    for politics (2): number = 19373, percentage = 13.53%
+    for sport (3): number = 19930, percentage = 15.5%
+    for tech (4): number = 18234, percentage = 11.13%
 (j) The number and percentage of 'words with a frequency of one' in the entire corpus (TRAIN SET + TEST SET):
     number = 319824, percentage = 38.24%
 (k) Your 2 favorite words (that are present in the vocabulary) and their log-prob IN TRAIN SET
  1. Log probability of word1 ("japan") with smoothing value = 1: 
-    log(P("japan"|business)) = 0.0005490708980085383
-    log(P("japan"|entertainment)) = 0.00020331083881360305
-    log(P("japan"|politics)) = 2.8110259682578948e-05
-    log(P("japan"|sport)) = 8.201944491763355e-05
-    log(P("japan"|tech)) = 0.0002620545073375262
+    log(P("japan"|business)) = 0.00036234947398934694
+    log(P("japan"|entertainment)) = 0.0001304441238758786
+    log(P("japan"|politics)) = 3.476426928402988e-05
+    log(P("japan"|sport)) = 9.493670886075949e-05
+    log(P("japan"|tech)) = 0.0002897785781186126
  2. Log probability of word2 ("korea") with smoothing value = 1: 
-    log(P("korea"|business)) = 0.00021592675764380722
-    log(P("korea"|entertainment)) = 3.9098238233385206e-05
-    log(P("korea"|politics)) = 1.686615580954737e-05
-    log(P("korea"|sport)) = 2.5236752282348784e-05
-    log(P("korea"|tech)) = 7.861635220125786e-05
+    log(P("korea"|business)) = 0.00021137052649378572
+    log(P("korea"|entertainment)) = 3.836591878702311e-05
+    log(P("korea"|politics)) = 2.3176179522686582e-05
+    log(P("korea"|sport)) = 2.5316455696202533e-05
+    log(P("korea"|tech)) = 6.727002706324934e-05
 
 
 
