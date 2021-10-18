@@ -76,7 +76,7 @@ def train_nb(x_train, y_train, smoothing=1.0): # Default smoothing value: 1
     paramsTopMLP = {'activation': ['logistic', 'tanh', 'relu', 'identity'], 'hidden_layer_sizes': [(30, 50), (10, 10, 10)], 'solver': ['sgd', 'adam']}
     parameters_list = [{}, {}, paramsTopDT, {}, paramsBaseMLP, paramsTopMLP] # 0th, 1th, 3th classifier models uses default parameters thus {}
 
-    results=[]
+    results_grid=[]
 
     for i in range(len(clfmodel_list)):
         grid=GridSearchCV(estimator=clfmodel_list[i], param_grid=parameters_list[i])
@@ -93,33 +93,35 @@ def train_nb(x_train, y_train, smoothing=1.0): # Default smoothing value: 1
             }
         )
 
-    for result in results:
+    for result in results_grid:
         print(result)
         print("\n")
 
-    return x_train, y_train, grid
+    return x_train, y_train, results_grid
 
 
-def test_nb(x_test, y_test, grid):
-    x_test_pred = grid.predict(x_test)
-    conf_matrix = confusion_matrix(y_test, x_test_pred)
-    report = classification_report(y_test, x_test_pred)
-    acc_score = round(accuracy_score(y_test, x_test_pred), 4)
-    f1_macro_score = round(f1_score(y_test, x_test_pred, average='macro'), 4)
-    f1_weighted_score = round(f1_score(y_test, x_test_pred, average='weighted'), 4)
-    print("\n\n << " + str(grid) + "\n")
-    print("===> Result Prediction (Actual value & Predicted value):\n")
-    print("---> Confusion matrix: \n" + str(conf_matrix) + "\n")
-    print("---> Classification report (Precision, Recall, F1): \n\n" + str(report))
-    print("---> Accuracy score: " + str(acc_score) + " (" + str(round(acc_score*100, 2)) + "%)")
-    print("---> F1-score with macro average: " + str(f1_macro_score) + " (" + str(round(f1_macro_score*100, 2)) + "%)")
-    print("---> F1-score with weighted average: " + str(f1_weighted_score) + " (" + str(round(f1_weighted_score*100, 2)) + "%)")
+def test_nb(x_test, y_test, results_grid):
+    for result in results_grid:
+        grid = result.get('grid')
+        x_test_pred = grid.predict(x_test)
+        conf_matrix = confusion_matrix(y_test, x_test_pred)
+        report = classification_report(y_test, x_test_pred)
+        acc_score = round(accuracy_score(y_test, x_test_pred), 4)
+        f1_macro_score = round(f1_score(y_test, x_test_pred, average='macro'), 4)
+        f1_weighted_score = round(f1_score(y_test, x_test_pred, average='weighted'), 4)
+        print("\n\n << " + str(grid) + "\n")
+        print("===> Result Prediction (Actual value & Predicted value):\n")
+        print("---> Confusion matrix: \n" + str(conf_matrix) + "\n")
+        print("---> Classification report (Precision, Recall, F1): \n\n" + str(report))
+        print("---> Accuracy score: " + str(acc_score) + " (" + str(round(acc_score*100, 2)) + "%)")
+        print("---> F1-score with macro average: " + str(f1_macro_score) + " (" + str(round(f1_macro_score*100, 2)) + "%)")
+        print("---> F1-score with weighted average: " + str(f1_weighted_score) + " (" + str(round(f1_weighted_score*100, 2)) + "%)")
     return conf_matrix, report, acc_score, f1_macro_score, f1_weighted_score
 
 dataset = read_documents('drug200.csv')
 plot_distribution(dataset)
 dataset = convert_numerical(dataset)
 x_train, x_test, y_train, y_test = split_dataset(dataset)
-x_train, y_train, grid = train_nb(x_train, y_train)
-conf_matrix, report, acc_score, f1_macro_score, f1_weighted_score = test_nb(x_test, y_test, grid)
+x_train, y_train, results_grid = train_nb(x_train, y_train)
+conf_matrix, report, acc_score, f1_macro_score, f1_weighted_score = test_nb(x_test, y_test, results_grid)
 
