@@ -4,12 +4,10 @@ import matplotlib.pyplot as plt
 import sklearn.datasets
 import numpy as np
 from collections import Counter
-from sklearn.metrics import confusion_matrix, classification_report, accuracy_score
-from sklearn.preprocessing import MultiLabelBinarizer
-from sklearn.naive_bayes import MultinomialNB
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import MultinomialNB
+from sklearn.metrics import confusion_matrix, classification_report, accuracy_score
 from sklearn.metrics import f1_score
 
 
