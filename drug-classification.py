@@ -156,12 +156,9 @@ for i in range(10):
     ten_f1_macro_score_list.append(f1_macro_score_list)
     ten_f1_weighted_score_list.append(f1_weighted_score_list)
     new_accuracy_list = zip(*ten_accuracy_list)
-    print(ten_accuracy_list)
     new_f1_macro_score_list = zip(*ten_f1_macro_score_list)
     new_f1_weighted_score_list = zip(*ten_f1_weighted_score_list)
-
 for accuracy in new_accuracy_list:
-    print(accuracy)
     average_accuracy = round(sum(accuracy) / len(accuracy), 4)
     average_accuracy_list.append(average_accuracy)
 for f1_macro_score in new_f1_macro_score_list:
