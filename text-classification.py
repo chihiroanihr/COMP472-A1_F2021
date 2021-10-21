@@ -234,6 +234,7 @@ def log_prob_of_fav_words(fav_word1, fav_word2, vectorizer, trainset_data_clf, s
     return log_prob_fav1_given_class0, log_prob_fav1_given_class1, log_prob_fav1_given_class2, log_prob_fav1_given_class3, log_prob_fav1_given_class4, log_prob_fav2_given_class0, log_prob_fav2_given_class1, log_prob_fav2_given_class2, log_prob_fav2_given_class3, log_prob_fav2_given_class4
 
 
+
 ################ MAIN ################
 
 # Reset file content for each execution
@@ -296,7 +297,7 @@ for i in range(4):
         file.write("Result Prediction (Actual value & Predicted value)\n")
         file.write("(b) Confusion matrix: \n" + str(conf_matrix) + "\n")
         file.write("(c) Classification report (Precision, Recall, F1): \n" + str(report) + "\n")
-        file.write("(d) Accuracy score: " + str(acc_score) + " (" + str(round(acc_score*100, 2)) + "%)\n\n")
+        file.write("(d) Accuracy score: " + str(acc_score) + " (" + str(round(acc_score*100, 2)) + "%)\n")
         file.write("    F1-score with macro average: " + str(f1_macro_score) + " (" + str(round(f1_macro_score*100, 2)) + "%)\n")
         file.write("    F1-score with weighted average: " + str(f1_weighted_score) + " (" + str(round(f1_weighted_score*100, 2)) + "%)\n")
 
