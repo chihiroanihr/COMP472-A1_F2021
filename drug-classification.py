@@ -125,3 +125,6 @@ x_train, x_test, y_train, y_test = split_dataset(dataset)
 x_train, y_train, results_grid = train_nb(x_train, y_train)
 conf_matrix, report, acc_score, f1_macro_score, f1_weighted_score = test_nb(x_test, y_test, results_grid)
 
+### Output files for result ###
+with open('drugs-performance.txtb', 'a') as file:
+    print("")
