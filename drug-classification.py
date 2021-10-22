@@ -155,9 +155,9 @@ for i in range(10):
     ten_accuracy_list.append(accuracy_list)
     ten_f1_macro_score_list.append(f1_macro_score_list)
     ten_f1_weighted_score_list.append(f1_weighted_score_list)
-    new_accuracy_list = zip(*ten_accuracy_list)
-    new_f1_macro_score_list = zip(*ten_f1_macro_score_list)
-    new_f1_weighted_score_list = zip(*ten_f1_weighted_score_list)
+new_accuracy_list = zip(*ten_accuracy_list)
+new_f1_macro_score_list = zip(*ten_f1_macro_score_list)
+new_f1_weighted_score_list = zip(*ten_f1_weighted_score_list)
 for accuracy in new_accuracy_list:
     average_accuracy = round(sum(accuracy) / len(accuracy), 4)
     average_accuracy_list.append(average_accuracy)
@@ -176,12 +176,18 @@ std_f1_weighted_score = round(np.std(average_f1_weighted_score_list), 4)
 # Output in file
 with open('drugs-performance.txt', 'a') as file:
     file.write("\n\n================== Question (8) ==================\n\n")
-    file.write("List of accuracy after 10 iterations for each classes: " + str(average_accuracy_list) + "\n")
-    file.write("Average accuracy: " + str(average_accuracy) + "\n")
+    # Accuracy
+    file.write("List of accuracy for each classifier types after 10 iterations: " + str(ten_accuracy_list)+ "\n")
+    file.write("Average accuracy for each classifier types after 10 iterations: " + str(average_accuracy_list) + "\n")
+    file.write("Average total accuracy: " + str(average_accuracy) + "\n")
     file.write("Standard deviation of accuracy: " + str(std_accuracy) + "\n\n")
-    file.write("List of f1 macro score after 10 iterations for each classes: " + str(average_f1_macro_score_list) + "\n")
-    file.write("Average f1 macro score: " + str(average_f1_macro_score) + "\n")
+    # F1 macro score
+    file.write("List of f1 macro score for each classifier types after 10 iterations: " + str(ten_f1_macro_score_list)+ "\n")
+    file.write("Average f1 macro score for each classifier types after 10 iterations: " + str(average_f1_macro_score_list) + "\n")
+    file.write("Average total f1 macro score: " + str(average_f1_macro_score) + "\n")
     file.write("Standard deviation of f1 macro score: " + str(std_f1_macro_score) + "\n\n")
-    file.write("List of f1 weighted score after 10 iterations for each classes: " + str(average_f1_weighted_score_list) + "\n")
-    file.write("Average f1 weighted score: " + str(average_f1_weighted_score) + "\n")
+    # F1 weighted score
+    file.write("List of f1 weighted score for each classifier types after 10 iterations: " + str(ten_f1_weighted_score_list)+ "\n")
+    file.write("Average f1 weighted score for each classifier types after 10 iterations: " + str(average_f1_weighted_score_list) + "\n")
+    file.write("Average total f1 weighted score: " + str(average_f1_weighted_score) + "\n")
     file.write("Standard deviation of f1 weighted score: " + str(std_f1_weighted_score) + "\n\n")

@@ -99,7 +99,7 @@ def calculate_prior_prob(dataset_target):
     freq_data = Counter(target for target in dataset_target)
     all_counter = freq_data[0] + freq_data[1] + freq_data[2] + freq_data[3] + freq_data[4]
     counter0, counter1, counter2, counter3, counter4 = freq_data[0], freq_data[1], freq_data[2], freq_data[3], freq_data[4]
-    prior0 = round(counter1/all_counter, 4)
+    prior0 = round(counter0/all_counter, 4)
     prior1 = round(counter1/all_counter, 4)
     prior2 = round(counter2/all_counter, 4)
     prior3 = round(counter3/all_counter, 4)

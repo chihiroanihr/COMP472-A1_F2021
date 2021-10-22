@@ -1,3 +1,5 @@
- Q. Does the same model give you the same performance every time?  
-    Explain in a plain text file called drugs-discussion.txt 
-    A 1 or 2 paragraph discussion is expected
+Q. Does the same model give you the same performance every time?  
+    Explain in a plain text file called drugs-discussion.txt: A 1 or 2 paragraph discussion is expected.
+
+A. Same model gives the same performance every time as long as they have same parameters. 
+   This is because the classifiers are trained based on same training dataset.

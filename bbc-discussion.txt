@@ -1,3 +1,9 @@
- Q. In a separate plain text file called bbc-discussion.txt, explain in 1 to 2 paragraphs:
+Q. In a separate plain text file called bbc-discussion.txt, explain in 1 to 2 paragraphs:
  (a)  what metric is best suited to this dataset/task and why (see step (2))
  (b)  why the performance of steps (8-10) are the same or are different than those of step (7) above.
+
+Answer:
+ (a) Recall, precision and F1 measure metrics are best stuited to this dataset since classes are not really equally distributed.
+     In other words, one class is more important (has more data) over other classes.
+ (b) The performances of steps (8-10) are the same because smoothing technique only handles the problem of zero probability in Naïve Bayes
+     and thus does not change the actual performances.
