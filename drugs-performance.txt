@@ -1,50 +1,50 @@
 ---------- GaussianNB() ----------
 Result Prediction (Actual value & Predicted value):
 (b) Confusion matrix: 
-[[ 3  0  0  0  0]
- [ 0  3  0  0  0]
- [ 0  0  2  0  0]
- [ 0  0  0 13  0]
- [ 3  3  3  0 10]]
+[[ 7  0  0  0  0]
+ [ 0  2  0  0  0]
+ [ 0  0  5  0  0]
+ [ 0  0  0 12  0]
+ [ 1  0  6  0 17]]
 (c) Classification report (Precision, Recall, F1): 
 
               precision    recall  f1-score   support
 
-           0       0.50      1.00      0.67         3
-           1       0.50      1.00      0.67         3
-           2       0.40      1.00      0.57         2
-           3       1.00      1.00      1.00        13
-           4       1.00      0.53      0.69        19
+           0       0.88      1.00      0.93         7
+           1       1.00      1.00      1.00         2
+           2       0.45      1.00      0.62         5
+           3       1.00      1.00      1.00        12
+           4       1.00      0.71      0.83        24
 
-    accuracy                           0.78        40
-   macro avg       0.68      0.91      0.72        40
-weighted avg       0.89      0.78      0.78        40
-(d) Accuracy score: 0.775 (77.5%)
-    F1-score with macro average: 0.7189 (71.89%)
-    F1-score with weighted average: 0.7812 (78.12%)
+    accuracy                           0.86        50
+   macro avg       0.87      0.94      0.88        50
+weighted avg       0.93      0.86      0.87        50
+(d) Accuracy score: 0.86 (86.0%)
+    F1-score with macro average: 0.8775 (87.75%)
+    F1-score with weighted average: 0.8712 (87.12%)
 
 
 ---------- DecisionTreeClassifier() ----------
 Result Prediction (Actual value & Predicted value):
 (b) Confusion matrix: 
-[[ 3  0  0  0  0]
- [ 0  3  0  0  0]
- [ 0  0  2  0  0]
- [ 0  0  0 13  0]
- [ 0  0  0  0 19]]
+[[ 7  0  0  0  0]
+ [ 0  2  0  0  0]
+ [ 0  0  5  0  0]
+ [ 0  0  0 12  0]
+ [ 0  0  0  0 24]]
 (c) Classification report (Precision, Recall, F1): 
 
               precision    recall  f1-score   support
 
-           0       1.00      1.00      1.00         3
-           1       1.00      1.00      1.00         3
-           2       1.00      1.00      1.00         2
-           3       1.00      1.00      1.00        13
-           4       1.00      1.00      1.00        19
+           0       1.00      1.00      1.00         7
+           1       1.00      1.00      1.00         2
+           2       1.00      1.00      1.00         5
+           3       1.00      1.00      1.00        12
+           4       1.00      1.00      1.00        24
 
-    accuracy                           1.00        40
-   macro avg       1.00      1.00      1.00        40
-weighted avg       1.00      1.00      1.00        40
+    accuracy                           1.00        50
+   macro avg       1.00      1.00      1.00        50
+weighted avg       1.00      1.00      1.00        50
 (d) Accuracy score: 1.0 (100.0%)
     F1-score with macro average: 1.0 (100.0%)
     F1-score with weighted average: 1.0 (100.0%)
@@ -55,24 +55,24 @@ Best Parameter chosen for this classifier: {'criterion': 'gini', 'max_depth': 6,
 Best score obtained from the chosen parameter: 0.9875
 Result Prediction (Actual value & Predicted value):
 (b) Confusion matrix: 
-[[ 3  0  0  0  0]
- [ 0  3  0  0  0]
- [ 0  0  2  0  0]
- [ 0  0  0 13  0]
- [ 0  0  0  0 19]]
+[[ 7  0  0  0  0]
+ [ 0  2  0  0  0]
+ [ 0  0  5  0  0]
+ [ 0  0  0 12  0]
+ [ 0  0  0  0 24]]
 (c) Classification report (Precision, Recall, F1): 
 
               precision    recall  f1-score   support
 
-           0       1.00      1.00      1.00         3
-           1       1.00      1.00      1.00         3
-           2       1.00      1.00      1.00         2
-           3       1.00      1.00      1.00        13
-           4       1.00      1.00      1.00        19
+           0       1.00      1.00      1.00         7
+           1       1.00      1.00      1.00         2
+           2       1.00      1.00      1.00         5
+           3       1.00      1.00      1.00        12
+           4       1.00      1.00      1.00        24
 
-    accuracy                           1.00        40
-   macro avg       1.00      1.00      1.00        40
-weighted avg       1.00      1.00      1.00        40
+    accuracy                           1.00        50
+   macro avg       1.00      1.00      1.00        50
+weighted avg       1.00      1.00      1.00        50
 (d) Accuracy score: 1.0 (100.0%)
     F1-score with macro average: 1.0 (100.0%)
     F1-score with weighted average: 1.0 (100.0%)
@@ -81,99 +81,99 @@ weighted avg       1.00      1.00      1.00        40
 ---------- Perceptron() ----------
 Result Prediction (Actual value & Predicted value):
 (b) Confusion matrix: 
-[[ 0  0  0  3  0]
- [ 0  0  0  3  0]
- [ 0  0  0  2  0]
- [ 0  0  0 12  1]
- [ 0  0  0  9 10]]
+[[ 7  0  0  0  0]
+ [ 1  0  1  0  0]
+ [ 0  0  4  0  1]
+ [ 4  0  8  0  0]
+ [ 6  0 10  0  8]]
 (c) Classification report (Precision, Recall, F1): 
 
               precision    recall  f1-score   support
 
-           0       0.00      0.00      0.00         3
-           1       0.00      0.00      0.00         3
-           2       0.00      0.00      0.00         2
-           3       0.41      0.92      0.57        13
-           4       0.91      0.53      0.67        19
+           0       0.39      1.00      0.56         7
+           1       0.00      0.00      0.00         2
+           2       0.17      0.80      0.29         5
+           3       0.00      0.00      0.00        12
+           4       0.89      0.33      0.48        24
 
-    accuracy                           0.55        40
-   macro avg       0.26      0.29      0.25        40
-weighted avg       0.57      0.55      0.50        40
-(d) Accuracy score: 0.55 (55.0%)
-    F1-score with macro average: 0.2476 (24.76%)
-    F1-score with weighted average: 0.5024 (50.24%)
+    accuracy                           0.38        50
+   macro avg       0.29      0.43      0.27        50
+weighted avg       0.50      0.38      0.34        50
+(d) Accuracy score: 0.38 (38.0%)
+    F1-score with macro average: 0.2661 (26.61%)
+    F1-score with weighted average: 0.3397 (33.97%)
 
 
 ---------- MLPClassifier(activation='logistic', solver='sgd') ----------
 Result Prediction (Actual value & Predicted value):
 (b) Confusion matrix: 
-[[ 0  0  0  1  2]
- [ 0  0  0  3  0]
- [ 0  0  0  1  1]
- [ 0  0  0  8  5]
- [ 0  0  0  1 18]]
+[[ 0  0  0  2  5]
+ [ 0  0  0  2  0]
+ [ 0  0  0  2  3]
+ [ 0  0  0  6  6]
+ [ 0  0  0  1 23]]
 (c) Classification report (Precision, Recall, F1): 
 
               precision    recall  f1-score   support
 
-           0       0.00      0.00      0.00         3
-           1       0.00      0.00      0.00         3
-           2       0.00      0.00      0.00         2
-           3       0.57      0.62      0.59        13
-           4       0.69      0.95      0.80        19
+           0       0.00      0.00      0.00         7
+           1       0.00      0.00      0.00         2
+           2       0.00      0.00      0.00         5
+           3       0.46      0.50      0.48        12
+           4       0.62      0.96      0.75        24
 
-    accuracy                           0.65        40
-   macro avg       0.25      0.31      0.28        40
-weighted avg       0.51      0.65      0.57        40
-(d) Accuracy score: 0.65 (65.0%)
-    F1-score with macro average: 0.2785 (27.85%)
-    F1-score with weighted average: 0.5726 (57.26%)
+    accuracy                           0.58        50
+   macro avg       0.22      0.29      0.25        50
+weighted avg       0.41      0.58      0.48        50
+(d) Accuracy score: 0.58 (58.0%)
+    F1-score with macro average: 0.2468 (24.68%)
+    F1-score with weighted average: 0.4772 (47.72%)
 
 
 ---------- MLPClassifier(activation='tanh', hidden_layer_sizes=(30, 50)) ----------
 Best Parameter chosen for this classifier: {'activation': 'tanh', 'hidden_layer_sizes': (30, 50), 'solver': 'adam'}
-Best score obtained from the chosen parameter: 0.825
+Best score obtained from the chosen parameter: 0.80625
 Result Prediction (Actual value & Predicted value):
 (b) Confusion matrix: 
-[[ 2  1  0  0  0]
- [ 0  3  0  0  0]
- [ 0  0  2  0  0]
- [ 0  0  0 12  1]
- [ 0  0  0  0 19]]
+[[ 5  2  0  0  0]
+ [ 0  1  0  1  0]
+ [ 0  0  0  3  2]
+ [ 2  0  0  7  3]
+ [ 0  0  0  0 24]]
 (c) Classification report (Precision, Recall, F1): 
 
               precision    recall  f1-score   support
 
-           0       1.00      0.67      0.80         3
-           1       0.75      1.00      0.86         3
-           2       1.00      1.00      1.00         2
-           3       1.00      0.92      0.96        13
-           4       0.95      1.00      0.97        19
+           0       0.71      0.71      0.71         7
+           1       0.33      0.50      0.40         2
+           2       0.00      0.00      0.00         5
+           3       0.64      0.58      0.61        12
+           4       0.83      1.00      0.91        24
 
-    accuracy                           0.95        40
-   macro avg       0.94      0.92      0.92        40
-weighted avg       0.96      0.95      0.95        40
-(d) Accuracy score: 0.95 (95.0%)
-    F1-score with macro average: 0.9183 (91.83%)
-    F1-score with weighted average: 0.9491 (94.91%)
+    accuracy                           0.74        50
+   macro avg       0.50      0.56      0.53        50
+weighted avg       0.66      0.74      0.70        50
+(d) Accuracy score: 0.74 (74.0%)
+    F1-score with macro average: 0.5257 (52.57%)
+    F1-score with weighted average: 0.6968 (69.68%)
 
 
 
 
 ================== Question (8) ==================
 
-List of accuracy for each classifier types after 10 iterations: [[0.775, 1.0, 1.0, 0.55, 0.65, 0.9], [0.775, 1.0, 1.0, 0.55, 0.625, 0.8], [0.775, 1.0, 1.0, 0.55, 0.675, 0.875], [0.775, 1.0, 1.0, 0.55, 0.625, 0.8], [0.775, 1.0, 1.0, 0.55, 0.65, 0.875], [0.775, 1.0, 1.0, 0.55, 0.65, 0.825], [0.775, 1.0, 1.0, 0.55, 0.675, 0.95], [0.775, 1.0, 1.0, 0.55, 0.675, 0.825], [0.775, 1.0, 1.0, 0.55, 0.675, 0.9], [0.775, 1.0, 1.0, 0.55, 0.675, 0.8]]
-Average accuracy for each classifier types after 10 iterations: [0.775, 1.0, 1.0, 0.55, 0.6575, 0.855]
-Average total accuracy: 0.8062
-Standard deviation of accuracy: 0.1664
+List of accuracy for each classifier types after 10 iterations: [[0.86, 1.0, 1.0, 0.38, 0.58, 0.72], [0.86, 1.0, 1.0, 0.38, 0.58, 0.8], [0.86, 1.0, 1.0, 0.38, 0.56, 0.74], [0.86, 1.0, 1.0, 0.38, 0.56, 0.82], [0.86, 1.0, 1.0, 0.38, 0.56, 0.92], [0.86, 1.0, 1.0, 0.38, 0.58, 0.76], [0.86, 1.0, 1.0, 0.38, 0.58, 0.86], [0.86, 1.0, 1.0, 0.38, 0.56, 0.78], [0.86, 1.0, 1.0, 0.38, 0.58, 0.84], [0.86, 1.0, 1.0, 0.38, 0.56, 0.78]]
+Average accuracy for each classifier types after 10 iterations: [0.86, 1.0, 1.0, 0.38, 0.57, 0.802]
+Average total accuracy: 0.7687
+Standard deviation of accuracy: 0.2262
 
-List of f1 macro score for each classifier types after 10 iterations: [[0.7189, 1.0, 1.0, 0.2476, 0.2785, 0.8122], [0.7189, 1.0, 1.0, 0.2476, 0.2642, 0.6028], [0.7189, 1.0, 1.0, 0.2476, 0.2883, 0.6596], [0.7189, 1.0, 1.0, 0.2476, 0.2642, 0.5101], [0.7189, 1.0, 1.0, 0.2476, 0.2785, 0.813], [0.7189, 1.0, 1.0, 0.2476, 0.2779, 0.6448], [0.7189, 1.0, 1.0, 0.2476, 0.2883, 0.9183], [0.7189, 1.0, 1.0, 0.2476, 0.2883, 0.616], [0.7189, 1.0, 1.0, 0.2476, 0.2883, 0.7041], [0.7189, 1.0, 1.0, 0.2476, 0.2874, 0.5571]]
-Average f1 macro score for each classifier types after 10 iterations: [0.7189, 1.0, 1.0, 0.2476, 0.2804, 0.6838]
-Average total f1 macro score: 0.6551
-Standard deviation of f1 macro score: 0.3026
+List of f1 macro score for each classifier types after 10 iterations: [[0.8775, 1.0, 1.0, 0.2661, 0.2468, 0.5527], [0.8775, 1.0, 1.0, 0.2661, 0.2468, 0.752], [0.8775, 1.0, 1.0, 0.2661, 0.233, 0.5241], [0.8775, 1.0, 1.0, 0.2661, 0.2317, 0.7218], [0.8775, 1.0, 1.0, 0.2661, 0.233, 0.9349], [0.8775, 1.0, 1.0, 0.2661, 0.2468, 0.5709], [0.8775, 1.0, 1.0, 0.2661, 0.2468, 0.7758], [0.8775, 1.0, 1.0, 0.2661, 0.233, 0.6547], [0.8775, 1.0, 1.0, 0.2661, 0.2468, 0.8125], [0.8775, 1.0, 1.0, 0.2661, 0.233, 0.5859]]
+Average f1 macro score for each classifier types after 10 iterations: [0.8775, 1.0, 1.0, 0.2661, 0.2398, 0.6885]
+Average total f1 macro score: 0.6787
+Standard deviation of f1 macro score: 0.3186
 
-List of f1 weighted score for each classifier types after 10 iterations: [[0.7812, 1.0, 1.0, 0.5024, 0.5726, 0.8976], [0.7812, 1.0, 1.0, 0.5024, 0.5467, 0.7804], [0.7812, 1.0, 1.0, 0.5024, 0.5924, 0.8514], [0.7812, 1.0, 1.0, 0.5024, 0.5467, 0.7524], [0.7812, 1.0, 1.0, 0.5024, 0.5726, 0.8636], [0.7812, 1.0, 1.0, 0.5024, 0.5744, 0.8018], [0.7812, 1.0, 1.0, 0.5024, 0.5924, 0.9491], [0.7812, 1.0, 1.0, 0.5024, 0.5924, 0.8055], [0.7812, 1.0, 1.0, 0.5024, 0.5924, 0.876], [0.7812, 1.0, 1.0, 0.5024, 0.5937, 0.7765]]
-Average f1 weighted score for each classifier types after 10 iterations: [0.7812, 1.0, 1.0, 0.5024, 0.5776, 0.8354]
-Average total f1 weighted score: 0.7828
-Standard deviation of f1 weighted score: 0.1905
+List of f1 weighted score for each classifier types after 10 iterations: [[0.8712, 1.0, 1.0, 0.3397, 0.4772, 0.6755], [0.8712, 1.0, 1.0, 0.3397, 0.4772, 0.7747], [0.8712, 1.0, 1.0, 0.3397, 0.4548, 0.6991], [0.8712, 1.0, 1.0, 0.3397, 0.4561, 0.7954], [0.8712, 1.0, 1.0, 0.3397, 0.4548, 0.9144], [0.8712, 1.0, 1.0, 0.3397, 0.4772, 0.7128], [0.8712, 1.0, 1.0, 0.3397, 0.4772, 0.8551], [0.8712, 1.0, 1.0, 0.3397, 0.4548, 0.7558], [0.8712, 1.0, 1.0, 0.3397, 0.4772, 0.8282], [0.8712, 1.0, 1.0, 0.3397, 0.4548, 0.7347]]
+Average f1 weighted score for each classifier types after 10 iterations: [0.8712, 1.0, 1.0, 0.3397, 0.4661, 0.7746]
+Average total f1 weighted score: 0.7419
+Standard deviation of f1 weighted score: 0.2546
 

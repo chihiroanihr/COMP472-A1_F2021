@@ -144,6 +144,12 @@ x_train, x_test, y_train, y_test = split_dataset(dataset)
 # 6. Run 6 different classifiers
 x_train, y_train, results_grid = train_nb(x_train, y_train)
 # 7. get results of each 6 classifier and append results into file
+'''
+dataset = read_documents('test38.csv')
+dataset = convert_numerical(dataset)
+x_test = dataset.drop('Drug', axis=1)
+y_test = dataset['Drug']
+'''
 test_nb(x_test, y_test, results_grid)
 
 # 8.  Redo training steps 10 times for each model 
