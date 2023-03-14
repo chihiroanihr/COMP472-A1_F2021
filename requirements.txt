@@ -50,7 +50,7 @@ paramiko==2.7.1
 pluggy==0.13.1
 post==2019.4.13
 pre-commit==2.0.1
-protobuf==3.11.2
+protobuf==3.18.3
 public==2019.4.13
 py==1.8.1
 py4j==0.10.9
