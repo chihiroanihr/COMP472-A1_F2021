@@ -14,7 +14,7 @@ colorama==0.4.3
 colour==0.1.5
 cryptography==43.0.1
 decorator==4.4.2
-Django==3.1.14
+Django==3.2.25
 dominate==2.5.1
 filelock==3.0.12
 Flask==2.2.5
